@@ -19,6 +19,8 @@ public class JavalinSingleton {
         app.get("/firstname/{first}", ctx -> {
             
             //write code here
+            String firstname = ctx.pathParam("first"); //"first" is a variable that is passed in from a method
+            ctx.result(firstname); // this line produces the response using the variable thatr was passed in in the previous line
 
         });
 
